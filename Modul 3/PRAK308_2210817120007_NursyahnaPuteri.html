@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pendaftaran Kursus</title>
+        <style type="text/css">
+            label {
+                width:200px;
+                display:inline-block;
+            }
+        </style>
+    </head>
+    <body>
+      <form>
+        <table border="3" bordercolor="grey" width="600px" align="center">
+            <tr bgcolor="skyblue" align="center" size="10" font="arial">
+                <td>
+                    <font color="red"><h1><center><b> Pendaftaran Kursus </b></center></h1></font>
+                </td>
+            </tr>
+            <tr bgcolor="grey">
+                <td>
+                    <font type="arial" size="5">
+                        <label for="Dt"><b>Data Diri</b></label>
+                        <br>
+                        <br>
+                    </font>
+                    <font type="arial" size="3"> 
+                        <label for="Nama">Nama</label>
+                        <input type="text" id="Nama" name="nama" value="" maxlength="25"> 
+                        <br>
+                        <label for="Nim">Nim</label>
+                        <input type="text"id=Nim name="nim" value="" maxlength="13">
+                        <br>
+                        <label for="E-mail">E-mail</label>
+                        <input type="text" id="E-mail" name="email" value="" maxlength="30">
+                        <br>
+                        <label for="TanggalLahir">Tanggal Lahir</label>
+                        <input type="date" name="bdaytime">
+                        <br>
+                        Jenis Kelamin<br>
+                        <label for="L"></label>
+                        <input type="radio" name="jenis_kelamin" value="L" id="L">
+                        <label for="JenisKelamin">Laki-laki</label>
+                        <br>
+                        <label for="P"></label>
+                        <input type="radio" name="jenis_kelamin" value="P" id="P">
+                        <label for="JenisKelamin">Perempuan</label>
+                        <br>
+                        Pilih Program Kursus<br>
+                        <label for="kursus_1"></label>
+                        <input type="checkbox" name="program1" value="C#" id="Kursus_1"> C#
+                        <br>
+                        <label for="Kursus_2"></label>
+                        <input type="checkbox" name="program2" value="java" id="Kursus_2"> Java
+                        <br>
+                        <label for="Kursus_3"></label>
+                        <input type="checkbox" name="program3" value="sql" id="Kursus_3"> SQL
+                        <br>
+                        <label for="Kursus_4"></label>
+                        <input type="checkbox" name="program4" value="htmldanphp" id="Kursus_4"> HTML dan PHP <br>
+                        <br>
+                        <label for="Pilihan">Pilihan Hari/Jam Kursus</label>
+                        <select name="Hari_jam_Kursus" >
+                            <option value="Senin-Rabu/09.00 - 11.00 " selected> Senin-Rabu/09.00-11.00 </option>
+                            <option value="enin-Rabu/11.00-13.00"> Senin-Rabu/11.00-13.00 </option> 
+                            <option value="Senin-Rabu/13.00-15.00"> Senin-Rabu/13.00-15.00 </option>
+                            <option value="Senin-Rabu/15.00 -17.00"> Senin-Rabu/15.00-17.00</option>
+                        </select>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </font>
+                </td>
+            </tr>
+            <tr bgcolor="#CD5C5C">
+                <td>
+                    Komentar Anda
+                    <br>
+                    <textarea name="deskripsi" cols="45" rows="5" align="left">
+                    </textarea> 
+                    <br>
+                    <input type="reset" value="Reset" name="Reset">
+                    <input type="submit" value="Sumbit" name="Submit">
+                    <input type="cancel" value="Cancel" name="Cancel">
+                    <br>
+                    <br>
+                </td>
+            </tr>
+        </table>
+      </form>
+    </body>
+</html>
