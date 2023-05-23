@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prompt Box</title>
+    </head>
+    <body>
+        <p>Klik tombol berikut untuk menampilkan konfirmasi</p>
+        <button onclick="myFunction()">Klik Disini</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction()
+            {
+                var x;
+                var name=prompt ("Silahkan masukkan nama anda","Galuh Meidaluna");
+                if (name!=null)
+                {
+                    x="Selamat Datang!" + name + " Bagaimana kabar anda hari ini?";
+                    document.getElementById("demo").innerHTML=x;
+                }
+            }
+        </script>
+    </body>
+</html>

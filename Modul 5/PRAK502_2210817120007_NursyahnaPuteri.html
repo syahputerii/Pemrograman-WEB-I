@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merespon Event</title>
+    </head>
+    <body>
+        <h1>Latihan JavaScript</h1>
+        <p id="demo">
+            Javascript bisa merubah isi elemen HTML
+        </p>
+        <script>
+            function myFunction ()
+            {
+                var x = document.getElementById ("demo"); // temukan elemen yang mana
+                x.innerHTML="Ini isi terbaru" ;//rubah isinya
+            }
+        </script>
+        <button type="button" onclick="myFunction()">Click Me!</button>
+    </body>
+</html>
